@@ -22,33 +22,31 @@ body {
     text-decoration: underline;
 }
 
-.description-container {
+.content-box {
     max-width: 900px;
     margin: 40px auto;
     background: white;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.description-container {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    gap: 30px;
 }
 
 .text-content {
     flex: 1;
-    min-width: 300px;
-    padding-right: 20px;
-}
-
-.image-container {
-    flex-shrink: 0;
 }
 
 .image-container img {
-    max-width: 350px;
+    max-width: 300px;
     height: auto;
     border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 @media screen and (max-width: 768px) {
@@ -58,7 +56,6 @@ body {
     }
 
     .image-container {
-        padding-left: 0;
         margin-top: 20px;
     }
 
