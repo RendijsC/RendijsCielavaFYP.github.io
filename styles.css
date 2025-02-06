@@ -124,8 +124,8 @@ body {
 
 .description-box {
     position: relative;
-    width: 85%;
-    max-width: 1200px;
+    width: 95%;
+    max-width: 1300px;
     padding: 50px;
     background: white;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
@@ -133,14 +133,16 @@ body {
     text-align: justify;
     font-size: 22px;
     line-height: 1.8;
+    display: flex;
+    align-items: flex-start;
 }
 
-/* Image inside the description box (Wrapped Text) */
+/* Image inside the description box (Proper Wrapping) */
 .logo-container {
-    width: 250px;
+    width: 300px;
     height: auto;
     float: right;
-    margin-left: 30px;
+    margin-left: 40px;
     margin-bottom: 10px;
 }
 
@@ -152,16 +154,16 @@ body {
 }
 
 /* Responsive Design */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     .description-box {
+        flex-direction: column;
         width: 90%;
         font-size: 18px;
         padding: 30px;
-        flex-direction: column;
     }
 
     .logo-container {
-        width: 150px;
+        width: 200px;
         margin: 0 auto 20px auto;
         float: none;
     }
