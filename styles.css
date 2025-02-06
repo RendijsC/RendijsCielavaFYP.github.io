@@ -124,8 +124,8 @@ body {
 
 .description-box {
     position: relative;
-    width: 95%;
-    max-width: 1300px;
+    width: 90%;
+    max-width: 1100px;
     padding: 50px;
     background: white;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
@@ -134,16 +134,16 @@ body {
     font-size: 22px;
     line-height: 1.8;
     display: flex;
-    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 /* Image inside the description box (Proper Wrapping) */
 .logo-container {
-    width: 300px;
-    height: auto;
-    float: right;
-    margin-left: 40px;
-    margin-bottom: 10px;
+    flex: 0 0 250px; /* Set a fixed size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo-container img {
@@ -151,6 +151,12 @@ body {
     height: auto;
     object-fit: contain;
     border-radius: 8px;
+}
+
+/* Adjust text so it fills the remaining space */
+.text-content {
+    flex: 1;
+    max-width: none;
 }
 
 /* Responsive Design */
@@ -163,12 +169,12 @@ body {
     }
 
     .logo-container {
-        width: 200px;
+        width: 100%;
         margin: 0 auto 20px auto;
-        float: none;
+        justify-content: center;
     }
 
     .logo-container img {
-        width: 100%;
+        width: 200px;
     }
 }
