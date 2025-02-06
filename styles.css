@@ -1,4 +1,4 @@
-body { 
+/* body { 
     font-family: Arial, sans-serif; 
     margin: 0;
     padding: 0;
@@ -116,10 +116,10 @@ h1 {
     .image-container img {
         max-width: 100%;
     }
-}
+} */
 
 
-/* body {
+body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
@@ -282,7 +282,7 @@ h1 {
         flex-direction: column;
         text-align: center;
     }
-} */
+}
 
 
 
