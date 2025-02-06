@@ -133,17 +133,22 @@ body {
     text-align: justify;
     font-size: 22px;
     line-height: 1.8;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 /* Image inside the description box (Wrapped Text) */
 .logo-container {
-    float: right;
+    width: 220px;
+    height: auto;
     margin-left: 30px;
     margin-bottom: 10px;
+    flex-shrink: 0;
 }
 
 .logo-container img {
-    width: 200px;
+    width: 100%;
     height: auto;
     object-fit: contain;
     border-radius: 8px;
@@ -155,16 +160,15 @@ body {
         width: 90%;
         font-size: 18px;
         padding: 30px;
+        flex-direction: column;
     }
 
     .logo-container {
-        float: none;
-        text-align: center;
+        width: 150px;
         margin: 0 auto 20px auto;
-        display: block;
     }
 
     .logo-container img {
-        width: 150px;
+        width: 100%;
     }
 }
