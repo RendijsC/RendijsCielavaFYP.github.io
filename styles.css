@@ -138,12 +138,12 @@ body {
 /* Image inside the description box (Wrapped Text) */
 .logo-container {
     float: right;
-    margin-left: 20px;
+    margin-left: 30px;
     margin-bottom: 10px;
 }
 
 .logo-container img {
-    width: 150px;
+    width: 200px;
     height: auto;
     object-fit: contain;
     border-radius: 8px;
@@ -165,6 +165,6 @@ body {
     }
 
     .logo-container img {
-        width: 120px;
+        width: 150px;
     }
 }
