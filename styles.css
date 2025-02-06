@@ -133,18 +133,15 @@ body {
     text-align: justify;
     font-size: 22px;
     line-height: 1.8;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
 }
 
 /* Image inside the description box (Wrapped Text) */
 .logo-container {
-    width: 220px;
+    width: 250px;
     height: auto;
+    float: right;
     margin-left: 30px;
     margin-bottom: 10px;
-    flex-shrink: 0;
 }
 
 .logo-container img {
@@ -166,6 +163,7 @@ body {
     .logo-container {
         width: 150px;
         margin: 0 auto 20px auto;
+        float: none;
     }
 
     .logo-container img {
