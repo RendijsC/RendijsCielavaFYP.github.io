@@ -110,21 +110,21 @@ body {
     margin-top: 80px;
 }
 
+/* Title */
 .description-title {
     font-size: 40px;
     font-weight: bold;
     margin-bottom: 30px;
 }
 
-/* Description Box */
+/* Center the description box */
 .description-container {
     display: flex;
     justify-content: center;
 }
 
-/* Description Box */
+/* Cleaned-up Description Box */
 .description-box {
-    position: relative;
     width: 85%;
     max-width: 1200px;
     padding: 50px;
@@ -134,27 +134,6 @@ body {
     text-align: justify;
     font-size: 22px;
     line-height: 1.8;
-    display: block; /* Ensure it behaves like a normal container */
-}
-
-/* Ensure text fills the full width */
-.description-box .text-content {
-    width: 100%;
-}
-
-/* Image inside the description box (Top Right) */
-.logo-container {
-    width: 220px;
-    float: right; /* Move the image to the top-right */
-    margin-left: 30px; /* Add some spacing between the image and text */
-    margin-bottom: 10px; /* Adds space below the image */
-}
-
-.logo-container img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    border-radius: 8px;
 }
 
 /* Responsive Design */
@@ -163,33 +142,5 @@ body {
         width: 90%;
         font-size: 18px;
         padding: 30px;
-    }
-
-    .logo-container {
-        width: 150px;
-        float: none; /* Remove float on small screens */
-        display: block;
-        margin: 0 auto 20px auto;
-    }
-}
-
-
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    .description-box {
-        width: 90%;
-        font-size: 18px;
-        padding: 30px;
-        flex-direction: column;
-    }
-
-    .logo-container {
-        width: 150px;
-        margin: 0 auto 20px auto;
-    }
-
-    .logo-container img {
-        width: 100%;
     }
 }
