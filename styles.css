@@ -134,22 +134,20 @@ body {
     text-align: justify;
     font-size: 22px;
     line-height: 1.8;
-    display: flex;
-    flex-wrap: nowrap; /* Ensure image and text stay in one row */
-    align-items: flex-start;
+    display: block; /* Ensure it behaves like a normal container */
 }
 
-/* Ensure text fills the remaining width */
-.text-content {
-    flex-grow: 1; /* Allows text content to expand */
-    max-width: 100%; /* Ensures full width usage */
+/* Ensure text fills the full width */
+.description-box .text-content {
+    width: 100%;
 }
 
-/* Image inside the description box */
+/* Image inside the description box (Top Right) */
 .logo-container {
     width: 220px;
-    flex-shrink: 0; /* Prevents image from shrinking */
-    margin-right: 30px; /* Adds spacing between image and text */
+    float: right; /* Move the image to the top-right */
+    margin-left: 30px; /* Add some spacing between the image and text */
+    margin-bottom: 10px; /* Adds space below the image */
 }
 
 .logo-container img {
@@ -158,6 +156,23 @@ body {
     object-fit: contain;
     border-radius: 8px;
 }
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .description-box {
+        width: 90%;
+        font-size: 18px;
+        padding: 30px;
+    }
+
+    .logo-container {
+        width: 150px;
+        float: none; /* Remove float on small screens */
+        display: block;
+        margin: 0 auto 20px auto;
+    }
+}
+
 
 
 /* Responsive Design */
